@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Water delivery| Buy water Online</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="styles/bootstrap-4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/fontawesome-free-5.12.0/css/all.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript">
+			function doValidation() {
+				var username = document.forms['validate']['email'];
+				var password = document.forms['validate']['password'];
+				if (username.value=="") {
+					window.alert("Please enter the username");
+					username.focus();
+					return false;
+				}
+				if (password.value=="") {
+					window.alert("Please enter the password");
+					password.focus();
+					return false;
+				}
+			}
+		</script>
+
+	<!-- <link rel="stylesheet" href="styles/main.css"> -->
+	<link rel="stylesheet" href="style_login.css">
+
+</head>  
+
+<body>
+	<div class="box">
+		<h2>Login</h2>
+		<form name="validate" method="POST" action="db_connect_login.php" onsubmit="return doValidation()">
+			<div class="inputBox">
+				<input type="text" name="email" placeholder="Enter Email">
+				<label>Email</label>
+				
+			</div>
+			<div class="inputBox">
+				<input type="password" name="password" placeholder="Enter password">
+				<label>password</label>
+				
+			</div>
+			<input type="submit" value="Login">
+
+		</form>
+		
+	</div>
+
+
+
+
+</body>
+
+</html>
